@@ -1,0 +1,7 @@
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\bin\Debug\CapstoneLab1.exe.config
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\bin\Debug\CapstoneLab1.exe
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\bin\Debug\CapstoneLab1.pdb
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\obj\Debug\CapstoneLab1.csprojAssemblyReference.cache
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\obj\Debug\CapstoneLab1.csproj.CoreCompileInputs.cache
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\obj\Debug\CapstoneLab1.exe
+C:\Users\Kristen\source\repos\C# Practice Labs\CapstoneLab1\CapstoneLab1\obj\Debug\CapstoneLab1.pdb
