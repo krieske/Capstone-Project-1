@@ -15,43 +15,60 @@ namespace CapstoneLab1
             string toTranslate = "";
             string vowels = "AEIOUaeiou";
             bool alphaNum = true;
+            string letsPlay;
 
-            // console input
-            while (alphaNum)
+            do
             {
-                Console.WriteLine("Translate English to PigLatin!");
-                Console.WriteLine("Please type what you want translated:");
-                toTranslate = Console.ReadLine().ToLower();
+                alphaNum = true;
 
-            // validation
-            // if else statement
-            
-
-                for (int i = 0; i < toTranslate.Length; i++)
+                // console input
+                while (alphaNum)
                 {
-                    if ((toTranslate[i] >= 'a') && (toTranslate[i] <= 'z') || (toTranslate[i] >= 'A') && (toTranslate[i] <= 'Z'))
+                    Console.WriteLine("Translate English to PigLatin!");
+                    Console.WriteLine("Please type what you want translated:");
+                    toTranslate = Console.ReadLine().ToLower();
+
+                    // validation
+                    // if else statement
+
+
+                    for (int i = 0; i < toTranslate.Length; i++)
                     {
-                        alphaNum = false;
+                        if ((toTranslate[i] >= 'a') && (toTranslate[i] <= 'z') || (toTranslate[i] >= 'A') && (toTranslate[i] <= 'Z'))
+                        {
+                            alphaNum = false;
+                        }
+                        else
+                        {
+                            alphaNum = true;
+                            Console.WriteLine("You entered an invalid response. Please try again.");
+                        }
+
                     }
-                    else
-                    {
-                        alphaNum = true;
-                        Console.WriteLine("You entered an invalid response. Please try again.");
-                    }
-                 
+
                 }
-                
-            }
                 //formula to convert english to pig latin
 
                 int index = toTranslate.IndexOfAny(vowels.ToCharArray()); // finding the firt vowel in the toTranslate input word.
                 string endWord = toTranslate.Substring(index); // saving the vowel and anything after into an index
                 string startWord = toTranslate.Substring(0, index); // saving anything before the first vowel + words "index"
 
-                // result
+                if (index == 0)
+                {
+                    Console.WriteLine(endWord + startWord + "way");
+                }
+                else
+                {
+                    Console.WriteLine(endWord + startWord + "ay");
+                }
 
-                Console.WriteLine(endWord + startWord + "ay");
-          
+                Console.WriteLine("Do you want to play again? y/n");
+                letsPlay = Console.ReadLine();
+
+            }
+            while ((letsPlay == "yes") || (letsPlay == "y"));
+            Console.WriteLine("Ok, goodbye!");
+
         }
     }
 }
